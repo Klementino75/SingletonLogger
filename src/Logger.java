@@ -25,7 +25,7 @@ public class Logger {
         System.out.printf("[%d] %s", num++, msg);
     }
 
-    public void data() {
+    public void dataAndTime() {
         Date dateNow = new Date();
         SimpleDateFormat formatForDateNow = new SimpleDateFormat("\nE d.MMMy - HH:mm:ss.S - ");
         System.out.print(formatForDateNow.format(dateNow));

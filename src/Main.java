@@ -9,12 +9,12 @@ public class Main {
             Logger logger = Logger.getInstance();
             Scanner scan = new Scanner(System.in);
 
-            logger.data();
+            logger.dataAndTime();
             logger.log("Запускаем программу.");
-            logger.data();
+            logger.dataAndTime();
             logger.log("Введите размер списка: ");
             int sizeList = scan.nextInt();
-            logger.data();
+            logger.dataAndTime();
             logger.log("Введите верхнюю границу для значений: ");
             int maxNum = scan.nextInt();
             Random random = new Random();
@@ -22,18 +22,18 @@ public class Main {
             for (int i = 0; i < sizeList; i++) {
                 arrayListRandom.add(random.nextInt(maxNum)); // создпём список из случайных значений от 0 до maxNum
             }
-            logger.data();
+            logger.dataAndTime();
             logger.log("Создаём и наполняем список.");
-            logger.data();
+            logger.dataAndTime();
             logger.log("Вот случайный список: " + arrayListRandom);
-            logger.data();
+            logger.dataAndTime();
             logger.log("Введите порог для фильтра: ");
             int treshold = scan.nextInt();
-            logger.data();
+            logger.dataAndTime();
             logger.log("Запускаем фильтрацию.");
             Filter filter = new Filter(treshold);
             System.out.println(filter.filterOut(arrayListRandom));
-            logger.data();
+            logger.dataAndTime();
             logger.log("Завершаем программу.");
         }
     }

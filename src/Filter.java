@@ -14,20 +14,20 @@ public class Filter {
 
         for (Integer i : source) {
             if (i > treshold) {
-                logger.data();
+                logger.dataAndTime();
                 logger.log("Элемент \"" + i + "\" подходит.");
                 result.add(i);
             } else {
-                logger.data();
+                logger.dataAndTime();
                 logger.log("Элемент \"" + i + "\" НЕ подходит.");
             }
         }
 
-        logger.data();
+        logger.dataAndTime();
         logger.log("Прошло фильтр " + result.size() + " элемента из " + source.size() + " элементов.");
-        logger.data();
+        logger.dataAndTime();
         logger.log("Выводим результат на экран.");
-        logger.data();
+        logger.dataAndTime();
         logger.log("Отфильтрованный список: ");
         return result;
     }
